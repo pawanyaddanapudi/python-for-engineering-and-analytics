@@ -1,0 +1,38 @@
+#       Python & Pycharm setup instructions
+
+
+# PYTHON Installation Instructions:
+
+# We are going to learn coding on Python 3.7 kernel.
+# Basis on your Operating System, please check this URL and install Python 3.7 - https://www.python.org/downloads/release/python-376/
+# Open your command line and verify if you are able to load python kernel. You should be able to run the below command
+
+#               Pawans-MacBook-Pro-2:~ pawanyaddanapudi$ python3
+#               Python 3.7.4 (default, Sep  7 2019, 18:27:02)
+#               [Clang 10.0.1 (clang-1001.0.46.4)] on darwin
+#               Type "help", "copyright", "credits" or "license" for more information.
+#               >>>
+
+# Along with Python 3.7, you should also be able to see pip installed. Pip for python3 is available as pip3. Verify the same on your system
+#               Pawans-MacBook-Pro-2:~ pawanyaddanapudi$ pip3 -V
+#               pip 19.1.1 from /usr/local/lib/python3.7/site-packages/pip (python 3.7)
+#               Pawans-MacBook-Pro-2:~ pawanyaddanapudi$
+
+
+# PyCharm Installation Instructions:
+
+# PyCharm is an integrated development environment used in computer programming, specifically for the Python language.
+# It is one of the widely used coding platforms across organizations. Hence, I would like you to take you through the courses on this platform so that you get real hands on.
+# It has community edition (open source) and Professional edition (Licenced) bundles. We are good to download and install community edition
+# Please install your respective bundle from - https://www.jetbrains.com/pycharm/download
+
+# Check in your programs or Apps that PyCharm is installed and available without any issues.
+
+# We will open our first project in PyCharm for the session.
+# The git repo is the project which we are going to download and open in PyCharm for our sessions.
+# This means that not just I code them, you will be able to download on your system as well and experiment with the code(s).
+
+# Refer README.md to clone this repo and get the code base.
+
+# Follow the video instructions to start over the project.
+# Youtube Channel -
