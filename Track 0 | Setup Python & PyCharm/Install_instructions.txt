@@ -1,5 +1,7 @@
 #       Python & Pycharm setup instructions
 
+# All the codes through this tutorial are available in this git repo. To clone the same on your system, install git before you start the journey
+# https://www.atlassian.com/git/tutorials/install-git
 
 # PYTHON Installation Instructions:
 
