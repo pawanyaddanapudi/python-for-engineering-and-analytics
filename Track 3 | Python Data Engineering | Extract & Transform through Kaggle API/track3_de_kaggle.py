@@ -2,8 +2,7 @@
 import kaggle
 import re
 import pandas as pd
-import time
-from datetime import datetime
+
 
 # Refer video session:
 # Create account in https://kaggle.com if you do not have one already
@@ -21,7 +20,7 @@ orskl_dataset = orskl_kaggle.dataset_view(orskl_dataset_loc)
 orskl_dataset.files
 
 # Pull data files from this datasets
-# orskl_kaggle.dataset_download_cli(orskl_dataset_loc, unzip=True)
+orskl_kaggle.dataset_download_cli(orskl_dataset_loc, unzip=True)
 
 # Understand three data files
 # movies.dat, ratings.dat and users.dat
@@ -70,11 +69,12 @@ print(orskl_final_ratings["user_id_usr"].nunique())
 #   - How many movies doesn't have titles?
 print(orskl_final_ratings["movie_id_mov"].isnull().sum())
 #   - For each movie, what is the count, min, max and average rating?
+print(orskl_final_ratings.groupby("movie_title").rating.agg(['min', 'max', 'mean', 'count']))
+#   - Sort the above stats by count of ratings
 print(orskl_final_ratings.groupby("movie_title").rating.agg(['min', 'max', 'mean', 'count']).
       reset_index().sort_values('count', ascending=False))
-#   - Sort the above stats by count of ratings
-print(orskl_final_ratings.groupby("movie_title").rating.agg(['min', 'max', 'mean', 'count']))
+
 
 # Exercise:
 # - Convert rating_timestamp to date
-# - For each move, find dates when minimum rating was given and maximum rating
+# - For each movie, find dates when minimum rating was given and maximum rating
