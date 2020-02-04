@@ -1,5 +1,5 @@
 # https://min-api.cryptocompare.com/
-# Login to https://min-api.cryptocompare.com/, create account if you dont have one.
+# Login to https://min-api.cryptocompare.com/, create account if you don't have one.
 # Understand the pricing constraints
 # Get your API key
 # Extract BTC to USA and GBP details for every 30 seconds
@@ -30,7 +30,7 @@ def pull_currency_data(site_url, apikey, file_name):
 
 key = '2447285030a725a86d4ef48ea1336edb9c67189caa0750fb8ab4697799861dc8'
 url = 'https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,JPY,EUR&api_key='
-file_name = './Track 4 | Python Data Engineering | Extract & Transform Real-time Data/currency_extract.csv'
+file_name = './Track 4 | Python Data Engineering | Real-time data | Extract & Transform/currency_extract.csv'
 schedule.every(30).seconds.do(pull_currency_data, url, key, file_name)
 
 # Run in  loop to extract data for every 30 seconds
@@ -38,7 +38,12 @@ while True:
     schedule.run_pending()
     time.sleep(1)
 
-# Verify data after a minute or two to find multiple records
+# Verify data after a minute or two to find multiple records in the file
+
+# Exercise:
+# - Understand what are the other keys available in data object inside the function
+# - For daily historical data, extract and transform all the array elements in the data object
+
 
 
 
